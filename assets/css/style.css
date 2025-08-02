@@ -1,0 +1,239 @@
+/*
+ * Global styles for the Allotment Hub website.  The site uses a
+ * minimalist layout with a fresh green palette inspired by the
+ * allotment garden.  Use flexbox and simple typography to
+ * organise content cleanly.  Where possible, keep the design
+ * lightweight so pages load quickly.  Feel free to customise
+ * colours by editing the CSS variables at the top of this file.
+ */
+
+/* Colour palette */
+:root {
+  --primary: #4caf50; /* vibrant green */
+  --primary-dark: #2e7d32; /* dark green */
+  --accent: #8bc34a; /* lighter green */
+  --background: #f4fdf4; /* very light green background */
+  --text: #222; /* dark text for readability */
+  --muted: #666; /* muted text */
+  --border: #d1e7d1; /* light green border */
+}
+
+/* Reset some default browser styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Segoe UI", "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: var(--background);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* Top navigation bar */
+nav {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 0;
+}
+
+nav .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--primary-dark);
+}
+
+/* General container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Headings */
+h2 {
+  margin: 20px 0 10px;
+  color: var(--primary-dark);
+}
+
+h3 {
+  margin: 15px 0 8px;
+  color: var(--primary);
+}
+
+p {
+  margin: 10px 0;
+  color: var(--text);
+}
+
+/* Card style for sections */
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+table th,
+table td {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8fff8;
+}
+
+/* Form styling */
+form {
+  margin-top: 10px;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background-color: white;
+}
+
+form button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+form button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Garden planner grid */
+#plannerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  gap: 2px;
+  margin-top: 10px;
+  background-color: var(--border);
+  border: 1px solid var(--border);
+}
+
+#plannerGrid div {
+  background-color: white;
+  border: 1px solid var(--border);
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  user-select: none;
+}
+
+#plannerGrid div.active {
+  background-color: var(--accent);
+  color: white;
+  font-weight: bold;
+}
+
+/* Plant list and details */
+.plant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.plant-item {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.plant-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.plant-item h4 {
+  margin-bottom: 8px;
+  color: var(--primary-dark);
+}
+
+.plant-details p {
+  margin-bottom: 12px;
+}
+
+/* Photo on plant detail page */
+.plant-details img.plant-photo {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  margin: 12px 0;
+  border-radius: 4px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+}
