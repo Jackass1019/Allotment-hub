@@ -44,6 +44,10 @@ nav {
   background-color: var(--primary);
   color: white;
   padding: 16px 0;
+  /* Keep the navigation bar visible above hero sections */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav .container {
