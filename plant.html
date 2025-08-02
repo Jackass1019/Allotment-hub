@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Details | Allotment Hub</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <h1>Allotment Hub</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calendar.html">Planting Calendar</a></li>
+        <li><a href="buy_sell.html">Buy &amp; Sell</a></li>
+        <li><a href="tips.html">Tips &amp; Tricks</a></li>
+        <li><a href="planner.html">Garden Planner</a></li>
+        <li><a href="plants.html" class="active">Plant Library</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container">
+    <div class="card plant-details" id="plantDetails">
+      <h2 id="plantName">Plant Name</h2>
+      <h3 id="plantType"></h3>
+      <!-- Photo of the selected plant will be inserted here -->
+      <img id="plantImage" src="" alt="Plant image" class="plant-photo" />
+      <p id="plantHistory"></p>
+      <p id="plantGrowing"></p>
+      <p id="plantMonths"></p>
+      <p><a href="plants.html">&larr; Back to Plant Library</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Allotment Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/plantsData.js"></script>
+  <script src="assets/js/plant.js"></script>
+</body>
+</html>

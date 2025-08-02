@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planting Calendar | Allotment Hub</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav>
+    <div class="container">
+      <h1>Allotment Hub</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calendar.html" class="active">Planting Calendar</a></li>
+        <li><a href="buy_sell.html">Buy &amp; Sell</a></li>
+        <li><a href="tips.html">Tips &amp; Tricks</a></li>
+        <li><a href="planner.html">Garden Planner</a></li>
+        <li><a href="plants.html">Plant Library</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container">
+    <h2>Planting Calendar</h2>
+    <p>Select a month to view which crops can be sown, or browse the full calendar below.</p>
+    <label for="monthSelect">Choose a month: </label>
+    <select id="monthSelect">
+      <option value="">-- All months --</option>
+      <option value="January">January</option>
+      <option value="February">February</option>
+      <option value="March">March</option>
+      <option value="April">April</option>
+      <option value="May">May</option>
+      <option value="June">June</option>
+      <option value="July">July</option>
+      <option value="August">August</option>
+      <option value="September">September</option>
+      <option value="October">October</option>
+      <option value="November">November</option>
+      <option value="December">December</option>
+    </select>
+    <div id="calendarTableContainer" class="card" style="overflow-x:auto; margin-top: 15px;"></div>
+    <div id="filteredList" class="card" style="display:none;"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Allotment Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/plantsData.js"></script>
+  <script src="assets/js/calendar.js"></script>
+</body>
+</html>

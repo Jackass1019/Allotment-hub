@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garden Planner | Allotment Hub</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <h1>Allotment Hub</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calendar.html">Planting Calendar</a></li>
+        <li><a href="buy_sell.html">Buy &amp; Sell</a></li>
+        <li><a href="tips.html">Tips &amp; Tricks</a></li>
+        <li><a href="planner.html" class="active">Garden Planner</a></li>
+        <li><a href="plants.html">Plant Library</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container">
+    <h2>Interactive Garden Planner</h2>
+    <p>Create a simple layout for your plot. Choose a crop from the list, then click squares in the grid to assign it. Your plan is stored locally in your browser.</p>
+    <div class="card">
+      <label for="cropSelect">Select crop:</label>
+      <select id="cropSelect"></select>
+      <button id="clearPlan" style="margin-left:10px;">Clear Plan</button>
+      <div id="plannerGrid"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Allotment Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/plantsData.js"></script>
+  <script src="assets/js/planner.js"></script>
+</body>
+</html>

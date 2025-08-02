@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy &amp; Sell | Allotment Hub</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <h1>Allotment Hub</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calendar.html">Planting Calendar</a></li>
+        <li><a href="buy_sell.html" class="active">Buy &amp; Sell</a></li>
+        <li><a href="tips.html">Tips &amp; Tricks</a></li>
+        <li><a href="planner.html">Garden Planner</a></li>
+        <li><a href="plants.html">Plant Library</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container">
+    <h2>Buy &amp; Sell Board</h2>
+    <p>Have spare seedlings or tools? Looking for specific seeds or equipment? Post a listing below. Listings are stored locally in your browser so you can manage them on repeat visits.</p>
+    <div class="card">
+      <form id="listingForm">
+        <label for="itemName">Item name:</label>
+        <input type="text" id="itemName" required>
+
+        <label for="itemDescription">Description:</label>
+        <textarea id="itemDescription" rows="3" required></textarea>
+
+        <label for="itemType">Type:</label>
+        <select id="itemType">
+          <option value="for sale">For Sale</option>
+          <option value="wanted">Wanted</option>
+        </select>
+
+        <label for="contactInfo">Contact information (email or phone):</label>
+        <input type="text" id="contactInfo" required>
+
+        <button type="submit">Add Listing</button>
+      </form>
+    </div>
+    <div class="card" id="listingsContainer">
+      <!-- Listings will appear here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Allotment Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/buy_sell.js"></script>
+</body>
+</html>
