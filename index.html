@@ -10,6 +10,7 @@
   <!-- Navigation bar -->
   <nav>
     <div class="container">
+      <img src="assets/images/logo.png" alt="Allotment Hub logo" class="logo">
       <h1>Allotment Hub</h1>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
@@ -23,35 +24,52 @@
     </div>
   </nav>
 
-  <!-- Hero section -->
-  <section class="container">
-    <div class="card">
-      <h2>Welcome to Allotment Hub</h2>
-      <p>Whether you're a seasoned gardener or a budding allotmenteer, Allotment Hub is your one‑stop resource for planning and managing your plot. Discover when to sow your seeds, trade surplus produce with neighbours, plan your beds and learn about the history and cultivation of common fruits and vegetables.</p>
+  <!-- Hero section with background image -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to Allotment Hub</h2>
+      <p>Grow your own paradise with our comprehensive guides, interactive tools and community marketplace.  Whether you’re a seasoned plot holder or a curious beginner, Allotment Hub will help you sow, nurture and harvest with confidence.</p>
+      <p><a href="plants.html" class="cta-button">Explore the Plant Library</a></p>
     </div>
+  </section>
 
-    <!-- Feature cards -->
-    <div class="card" style="display: flex; flex-wrap: wrap; gap: 20px;">
-      <div style="flex: 1 1 250px;">
-        <h3>Plan Your Sowing</h3>
-        <p>Visit the <a href="calendar.html">Planting Calendar</a> to find the best months for sowing each crop.</p>
+  <!-- Feature overview inspired by yougarden.com style -->
+  <section class="features">
+    <div class="feature-card" style="background-image: url('assets/images/carrot.jpg');">
+      <div class="feature-overlay">
+        <h3>Planting Calendar</h3>
+        <p>Find the best sowing and harvesting months for over 200 crops.</p>
+        <a href="calendar.html" class="feature-link">View calendar</a>
       </div>
-      <div style="flex: 1 1 250px;">
-        <h3>Trade Seeds &amp; Produce</h3>
-        <p>Use the <a href="buy_sell.html">Buy &amp; Sell</a> board to offer spare seedlings, seeds or tools and pick up what you need.</p>
+    </div>
+    <div class="feature-card" style="background-image: url('assets/images/lettuce.jpg');">
+      <div class="feature-overlay">
+        <h3>Tips &amp; Tricks</h3>
+        <p>From mulching to seed saving, discover expert techniques to boost your harvest.</p>
+        <a href="tips.html" class="feature-link">Learn more</a>
       </div>
-      <div style="flex: 1 1 250px;">
-        <h3>Inspiration &amp; Advice</h3>
-        <p>Our <a href="tips.html">Tips &amp; Tricks</a> section shares seasonal jobs, problem‑solving hacks and allotment wisdom.</p>
+    </div>
+    <div class="feature-card" style="background-image: url('assets/images/peas.jpg');">
+      <div class="feature-overlay">
+        <h3>Garden Planner</h3>
+        <p>Design your dream plot with our interactive planner and colourful crop icons.</p>
+        <a href="planner.html" class="feature-link">Start planning</a>
       </div>
-      <div style="flex: 1 1 250px;">
-        <h3>Design Your Plot</h3>
-        <p>Experiment with layouts in the interactive <a href="planner.html">Garden Planner</a> before you dig.</p>
-      </div>
-      <div style="flex: 1 1 250px;">
+    </div>
+    <div class="feature-card" style="background-image: url('assets/images/strawberry.jpg');">
+      <div class="feature-overlay">
         <h3>Plant Library</h3>
-        <p>Browse our <a href="plants.html">Plant Library</a> to learn the history and cultivation details of common crops.</p>
+        <p>Explore detailed histories and growing guides for fruits and vegetables.</p>
+        <a href="plants.html" class="feature-link">Browse library</a>
       </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section class="container about">
+    <div class="about-card">
+      <h3>Why I built Allotment Hub</h3>
+      <p>I created Allotment Hub to bring together everything I’ve learnt on my own plot into one place. After years of scribbling notes about seed timings, swapping seedlings with friends and experimenting with layouts, I wanted a home for all that knowledge. This site is a living project – built to help fellow gardeners get organised, share resources and connect with a growing community.</p>
     </div>
   </section>
 
